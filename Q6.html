@@ -1,0 +1,19 @@
+<html>
+<script>
+var a= parseInt(prompt("Enter Coeff of x^2"))
+var b= parseInt(prompt("Enter Coeff of x"))
+var c= parseInt(prompt("Enter Constant"))
+var d =((b**2)-4*a*c)**0.5
+if(d>0){
+var root1 = (-b +d)/2*a
+var root2 = (-b -d)/2*a
+document.write("Root 1 is "+root1 +"<br>")
+document.write("Root 2 is "+root2)
+}
+else if (d==0){
+var root1 = (-b +d)/2*a
+document.write("Equation has same roots which is "+root1)
+}else{document.write("Equation has Complex Roots")}
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<script>
+var x=parseInt(prompt("Enter to check if number is prime or not"))
+var primeNum= false;
+if(x<2){
+  document.write("Please Enter A Number Greater than 1")
+}else{
+for (i=2;i<x;i++){
+  if(x%i===0){
+  primeNum = false
+  console.log("i broke")
+  break;
+}
+  primeNum = true;
+}
+if(primeNum==true){
+  document.write(x+" is a Prime Number")
+}else if (primeNum==false){
+  document.write(x+" is not a Prime Number")
+}
+}
+</script>
+</html>
